@@ -19,8 +19,8 @@ namespace UnitTest
 		TEST_METHOD(TestEqualityRectangle)
 		{
 			Rectangle r1(20, 20);
-			Rectangle* r2 = new Rectangle(20, 20);
-			Assert::AreEqual(r1.area(), r2->area());
+			Rectangle r2 (20, 20);
+			Assert::IsTrue(r1 ==  r2);
 		}
 
 		TEST_METHOD(TestAssignRectangle)
